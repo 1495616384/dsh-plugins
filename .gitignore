@@ -25,3 +25,4 @@ credentials*.yaml
 
 # 插件运行期在工作区落下的档案
 contradiction-workbench.json
+.commitmsg.txt
