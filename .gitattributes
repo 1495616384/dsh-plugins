@@ -1,0 +1,15 @@
+# 仓库以 LF 存储，避免 Windows/macOS 之间来回改写整个文件的历史。
+* text=auto eol=lf
+
+# 二进制不要做行尾转换
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+
+# 导出 diff 时把源码当对应语言处理，便于审阅
+*.js text diff=javascript
+*.mjs text diff=javascript
+*.json text
+*.md text

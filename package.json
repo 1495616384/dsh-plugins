@@ -1,0 +1,12 @@
+{
+  "name": "dsh-plugins",
+  "private": true,
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 自建插件集合：/handoff 会话交接、/mode 模式切换、会话成本提醒、矛盾论分析台、免费联网搜索、财务工具",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1495616384/dsh-plugins.git"
+  }
+}

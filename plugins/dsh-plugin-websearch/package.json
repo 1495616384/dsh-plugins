@@ -1,0 +1,12 @@
+{
+  "name": "@local/dsh-tool-websearch",
+  "description": "免费联网搜索（宿主常驻）：web_search_free（百度 HTML 免费端点为主、Bing RSS 兜底，零 API key 零收费）+ web_fetch_free（本地抓取网页正文）",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  }
+}

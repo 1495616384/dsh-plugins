@@ -1,0 +1,27 @@
+# 依赖与产物
+node_modules/
+pnpm-lock.yaml
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak
+tmp/
+
+# 凭据（任何情况下都不入库）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.yaml
+.git-credentials
+
+# 插件运行期在工作区落下的档案
+contradiction-workbench.json

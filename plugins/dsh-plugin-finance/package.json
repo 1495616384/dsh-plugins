@@ -1,0 +1,18 @@
+{
+  "name": "@local/dsh-client-ui-finance",
+  "description": "财务插件（浏览器半区）：比价 / 折扣验证 / 订阅审计 / 储蓄规划，纯客户端计算",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  }
+}

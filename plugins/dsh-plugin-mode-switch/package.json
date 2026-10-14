@@ -1,0 +1,18 @@
+{
+  "name": "@local/dsh-plugin-mode-switch",
+  "description": "对话中切换 Agent 模式（preset）：/mode 命令按最后一个完整轮次切分当前历史，用目标模式组合出新会话，客户端自动打开",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  }
+}

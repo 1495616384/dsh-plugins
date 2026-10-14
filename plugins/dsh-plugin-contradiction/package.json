@@ -1,0 +1,12 @@
+{
+  "name": "@local/dsh-tool-contradiction",
+  "description": "矛盾论分析台（宿主常驻）：主要矛盾建档（可联网补实时资料）、实践回验判定、名义占有/实际支配审计、案例档案库、社会实践检验·本质性归纳总结；档案持久化到工作区 contradiction-workbench.json",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  }
+}

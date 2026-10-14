@@ -1,0 +1,15 @@
+init: DSH 自建插件集合（6 个包）
+
+plugins/ 下每个目录都是独立可直接 file: 引用的 npm 包，lib/*.js 即产物，无构建步骤：
+
+- dsh-plugin-handoff       /handoff 会话交接：九段结构化简报 + 脱敏 + 工作区挂载 + 浏览器自动切换；
+                           agent/pre-step 阈值提醒（默认 85%，口径同 dsh-compaction-basic 的 tokenMeter）
+- dsh-plugin-mode-switch   /mode 开聊后切换 preset：按最后一个完整轮次切分历史，用目标模式重组新会话
+- dsh-plugin-session-watch 会话累计 token / 上下文占用越阈值时，在 Composer Dock 提示开新会话
+- dsh-plugin-finance       侧边栏财务工具：比价 / 折扣验证 / 满减对比 / 订阅 vs 按量（纯客户端计算）
+- dsh-plugin-contradiction 矛盾论分析台 5 个工具：建档、实践回验判定、所有制审计、案例库、本质归纳
+- dsh-plugin-websearch     免费联网搜索与正文抓取，零 API key（百度 HTML 为主、Bing RSS 兜底）
+
+共同取舍：零依赖直出 ESM；可选服务一律 ctx.get 惰性读取（Loader 并发装配同层条目，晚发布的服务
+取不到不算故障）；缺能力时降级而不是报错。开发与验证基线 @deepseek-ai/dsh 0.1.0-rc.7（web profile），
+未改动 harness 源码。
